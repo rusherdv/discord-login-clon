@@ -1,0 +1,106 @@
+@import url('/fonts/ggSans/stylesheet.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.ggSans{
+  font-family: 'gg sans Normal';
+}
+
+.ggSans400{
+    font-family: 'gg sans';
+    font-weight: 400;
+}
+
+.ggSans600{
+    font-family: 'gg sans';
+    font-weight: 600;
+}
+
+.ggSans900{
+    font-family: 'gg sans';
+    font-weight: 900;
+}
+
+.sidebar::-webkit-scrollbar{
+  display: none;
+}
+
+/*::-webkit-scrollbar {
+/*  width: 4px; /* Ancho de la barra de desplazamiento */
+/*}
+/*
+/*::-webkit-scrollbar-thumb {
+/*  background-color: #1A1B1E; /* Color del pulgar */
+/*  border-radius: 10px; /* Bordes redondeados del pulgar */
+/*}
+/*
+/*::-webkit-scrollbar-track {
+/*  background-color: #2B2D31; /* Color de fondo de la pista */
+/*}
+*/
+
+/* Cambiar el color de fondo de la barra de desplazamiento */
+.chatside-scroll::-webkit-scrollbar {
+  background-color: #1a202c;
+}
+
+/* Cambiar el color de la barra de desplazamiento */
+.chatside-scroll::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+}
+
+
+
+
+.selectDiv .select__menu {
+    background-color: #2B2D31;
+}
+
+.select__indicator-separator{
+    display: none;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 48px;
+    height: 25px;
+    border-radius: 7px;
+    background-clip: content-box;
+    border: 1.5px solid #9299A2;
+    background-color: #313338;
+    margin-right: 10px;
+    position: relative;
+}
+
+input[type=checkbox]:checked{
+  background-color: #007bff;
+}
+
+input[type=checkbox]:checked::before{
+  content: '\2713';
+  font-size: 20px;
+  font-family: 'gg sans';
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hover-fill svg path{
+  transition: all .2s ease;
+}
+
+.hover-fill:hover svg path {
+  fill: #DBDEE1;
+  transition: all .2s ease-in-out;
+}
